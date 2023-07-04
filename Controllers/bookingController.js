@@ -1,9 +1,6 @@
 import Booking from './../models/Booking.js'
 
 
-// create new booking
-
-
 export const createBooking = async(req,res) => {
    const newBooking = new Booking(req.body)
  
@@ -16,7 +13,6 @@ export const createBooking = async(req,res) => {
    }
 }
 
-// get single booking
 export const getBooking = async(req,res) => {
    const id = req.params.id
    
@@ -29,7 +25,6 @@ export const getBooking = async(req,res) => {
    }
 } 
 
-// get all booking
 export const getAllBooking = async(req,res) => {
    
    try {

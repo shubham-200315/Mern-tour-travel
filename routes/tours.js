@@ -15,48 +15,19 @@ const router = express.Router()
 
 
 //Create new tour  
-// router.post('/', createTour)
 router.post('/', verifyAdmin, createTour)
 
-
-
-
-
-
 // //Update tour 
-// router.put('/:id', updateTour)
 router.put('/:id', verifyAdmin, updateTour)
 
-
-
-
-
-
-
-
 // //Delete tour 
-// router.delete('/:id', deleteTour)
 router.delete('/:id', verifyAdmin, deleteTour)
 
-
-
-
-
-
 // //Get single tour
-// router.get('/:id', getSingleTour) 
 router.get('/:id', getSingleTour)
-
-
-
 
 // //Get all tour 
 router.get('/', getAllTour)
-// router.get('/', getAllTour)
-
-
-
-
 
 //Get tour by search
 router.get("/search/getTourBySearch", getTourBySearch)

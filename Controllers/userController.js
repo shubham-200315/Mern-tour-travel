@@ -1,6 +1,5 @@
 import User from '../models/User.js'
 
-//Create new User
 export const createUser = async (req, res) => {
    const newUser = new User(req.body)
 
@@ -13,7 +12,6 @@ export const createUser = async (req, res) => {
    }
 }
 
-//Update User
 export const updateUser = async (req, res) => {
    const id = req.params.id
 
@@ -28,7 +26,6 @@ export const updateUser = async (req, res) => {
    }
 }
 
-//Delete User
 export const deleteUser = async (req, res) => {
    const id = req.params.id
 
@@ -41,7 +38,6 @@ export const deleteUser = async (req, res) => {
    }
 }
 
-//Get single User
 export const getSingleUser = async (req, res) => {
    const id = req.params.id
 
@@ -54,9 +50,8 @@ export const getSingleUser = async (req, res) => {
    }
 }
 
-//GetAll User
+
 export const getAllUser = async (req, res) => {
-   //console.log(page)
 
    try {
       const users = await User.find({})
