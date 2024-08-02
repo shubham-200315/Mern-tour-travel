@@ -1,5 +1,5 @@
 Don't forget to star the repo.
-# mern-social-media-complete-project
+# mern-Travel-Booking-complete-project
 A MERN stack based project on travel planner application. It is completely working project. Its' completely responsive application.
 MongoDB Express React Redux NodeJs are user in this project.
 
